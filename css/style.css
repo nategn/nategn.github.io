@@ -134,29 +134,32 @@ nav a.active {
     color: #fffaf0;
 }
 
-
 /* =========================================================
    HOME / LANDING PAGE
 ========================================================= */
 
 .hero {
+    width: 100%;
+
     min-height: 90vh;
 
     display: grid;
 
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 50% 50%;
 
-    gap: 0;
+    align-items: stretch;
 
     background: #17130f;
 }
 
 
-/* ---------------------------------------------------------
-   Hero image
---------------------------------------------------------- */
+/* =========================================================
+   HERO IMAGE
+========================================================= */
 
 .hero-image {
+    width: 100%;
+
     height: 90vh;
 
     overflow: hidden;
@@ -168,9 +171,11 @@ nav a.active {
     width: 100%;
     height: 100%;
 
+    display: block;
+
     object-fit: cover;
 
-    display: block;
+    object-position: center;
 
     transition: transform 0.7s ease;
 }
@@ -180,11 +185,14 @@ nav a.active {
 }
 
 
-/* ---------------------------------------------------------
-   Hero text
---------------------------------------------------------- */
+/* =========================================================
+   HERO TEXT
+========================================================= */
 
 .hero-content {
+    width: 100%;
+    height: 90vh;
+
     display: flex;
 
     flex-direction: column;
@@ -195,7 +203,7 @@ nav a.active {
 
     padding: 8%;
 
-    max-width: 750px;
+    max-width: none;
 }
 
 .eyebrow {
@@ -213,7 +221,7 @@ nav a.active {
 .hero-content h1 {
     font-family: "Playfair Display", serif;
 
-    font-size: clamp(3.5rem, 5vw, 5.5rem);
+    font-size: clamp(3rem, 5vw, 5rem);
 
     font-weight: 600;
 
